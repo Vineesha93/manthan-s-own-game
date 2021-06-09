@@ -109,10 +109,12 @@ function draw() {
 
   if(keyDown(LEFT_ARROW)){
     ball.x = ball.x - 50;
+    score = score + 1;
   }
 
   if(keyDown(RIGHT_ARROW)){
     ball.x = ball.x + 50;
+    score = score + 1;
   }
 
   if(monster1.isTouching(ball) || monster2.isTouching(ball) || monster3.isTouching(ball) || monster4.isTouching(ball) || monster5.isTouching(ball) || monster6.isTouching(ball) || monster7.isTouching(ball) || monster8.isTouching(ball)) {
